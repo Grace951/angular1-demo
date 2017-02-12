@@ -12,7 +12,7 @@
     position: relative;
     margin: 0 auto;
     max-width: 1200px;
-    background-image: url('/images/logo-03.png');
+    background-image: url('../images/logo-03.png');
     background-size: 140px 48px;
     background-position: 0px 18px;
     @include respond-to(sm) {
