@@ -1,0 +1,45 @@
+#footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: $footer-height;
+    background: $footer-color;
+    font-family: $font-p;
+    font-size: $fontsize-p;
+    .footer{
+      margin: 0 auto;
+      width: 100%;
+      min-width: 300px;
+      max-width: 1200px;
+    }
+    .footer_menu{
+      width: 300px;
+      margin: 0 auto;
+      ul li {
+        color: #fff;
+        @include inline-block-grace(72px);
+      }
+      a {
+        display: block;
+        width: 100%;
+        color:#aaa;
+        line-height: 40px;
+        text-align: center;
+      }
+      a:hover {
+        color: #fff;
+        @include box-shadow(#000 0 0 3px 1px inset);
+        font-weight: normal;
+      }
+    }
+  .copyright{
+    text-align: center;
+    color:#ccc;
+    @include respond-to(xs) {
+      margin-top: -5px;
+      line-height: 20px;
+      font-size: 11px;
+    }
+  }
+
+}

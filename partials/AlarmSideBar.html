@@ -1,0 +1,14 @@
+<div ng-controller="ProductListCtrlSide">
+  <div class="col-sm-12 cat">
+    <!--Sidebar content-->
+    <ul ><li>Brand:
+        <ul><li><a ui-sref="products.alarm({ alarmId: 0 , t:''})">
+            All &nbsp; ({{share.products.length}})</a></li>
+          <li><a ui-sref="products.alarm({ alarmId: 0 , t:'BOSCH' })">
+            BOSCH &nbsp; ({{(share.products | filter:{brand:'BOSCH'}).length}})</a></li>
+       </ul>
+    </ul>
+</div>
+
+
+

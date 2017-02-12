@@ -1,0 +1,165 @@
+.home-banner{
+  @include respond-to(xs) {
+    margin-top: 10px;
+  }
+  .banner{
+    position: relative;
+    height: $banner-height;
+    overflow:hidden;
+    margin: 0;
+    padding: 0;
+    @include respond-to(xs) {
+      height: $banner-height - 100px;
+    }
+  }
+}
+
+.panel-body {
+  position:relative;
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width: 100%;
+  .banner1, .banner2, .banner3{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:100%;
+    position:relative;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+  }
+  .banner1{
+    background-image: url(/images/banner1.png);
+  }
+  .banner2{
+    background-image: url(/images/banner2.png);
+  }
+  .banner3{
+    background-image: url(/images/banner3.png);
+  }
+  .bg{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    @include respond-to(xs) {
+      height: 60px;
+    }
+    background-color: rgba(215, 139, 44, 0.3);
+
+/* Here some time problem for Hover than you can use background color/image */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#88000000, endColorstr=#88000000)";
+    /* Below IE7 supported */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#88000000, endColorstr=#88000000);
+  }
+  .word{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    @include respond-to(xs) {
+      right: 5px;
+      width: 300px;
+    }
+  }
+  h2, h3 {
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    left: 60px;
+    @include respond-to(xs) {
+      right: 10px;
+    }
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    @include text-shadow(3px 3px 6px #000);
+    color: #fff;
+    font-size: 35px;
+  }
+  h2 {
+    text-align: left;
+    @include respond-to(xs) {
+      top: 10px;
+      left: 10px;
+    }
+  }
+  h3 {
+    left: 300px;
+    top: 40px;
+    z-index: 2;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    @include respond-to(xs) {
+      left: 150px;
+      top: 50px;
+      width: 120px;
+      //background-color: rgba(100, 70, 33, 0.5);
+      background-color: $color4;
+      padding: 15px 20px;
+      border: 2px rgba(255, 255, 255, 0.2) solid;
+      @include text-shadow(3px 3px 3px #000);
+      //background-color: rgba(215, 139, 44, 0.3);
+    }
+  }
+  .banner1 h3 {
+    left: 250px;
+    @include respond-to(xs) {
+      left: 150px;
+    }
+  }
+  .banner3 h3 {
+    left: 260px;
+    @include respond-to(xs) {
+      left: 150px;
+      width: 130px;
+      padding: 25px 20px;
+    }
+  }
+}
+
+.my-switch-animation.ng-enter,
+.my-switch-animation.ng-leave {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+
+  position:absolute;
+}
+
+.my-switch-animation.ng-enter {
+  left:100%;
+}
+
+.my-switch-animation.ng-leave,
+.my-switch-animation.ng-enter.ng-enter-active {
+  left:0;
+}
+
+.my-switch-animation.ng-leave.ng-leave-active {
+  left:-100%;
+}
+
+.btn-switch{
+  text-align: center;
+  height: 20px;
+  position: absolute;
+  bottom: 15px;
+  ul li{
+    position:relative;
+    margin-left: 10px;
+    @include inline-block-grace(10px);
+    height: 10px;
+    @include border-radius(5px 5px 5px 5px);
+    background-color:  #fff;
+    @include box-shadow(1px 1px 2px #999999);
+    cursor: pointer;
+    border:1px solid #fff;
+  }
+  .active{
+    background-color:  #999;
+  }
+}

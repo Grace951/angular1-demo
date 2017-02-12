@@ -1,0 +1,63 @@
+<div class="product-detail">
+  <div class="row">
+    <div id="product-top" class="col-xs-12 col-sm-4 col-md-4 col-lg-5 product-images">
+      <img ng-src="{{img}}"
+           class="img-responsive ani"
+           ng-repeat="img in product.images"
+           ng-class="{active: mainImageUrl==img}">
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-7 product-desc">
+      <h1>{{product.name}}</h1>
+      <div class="p-desc-detail">
+        <ul class="fa-ul">
+            <li ng-repeat="d in product.description"><i class="fa-li fa fa-check-square"></i>{{d}}</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 hidden-xs">
+      <div class="p-thumbs">
+        <ul class="product-thumbs">
+          <li ng-repeat="img in product.images"
+              ng-if="product.images.length>1"
+              ng-class="{active: mainImageUrl==img}">
+            <img ng-src="{{img}}" ng-click="setImage(img)">
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div ng-controller="tabController">
+    <ul tabset>
+        <li tab
+            ng-repeat="t in tabs"
+            heading="{{t.heading}}"
+            select="go(t.route)"
+            active="t.active">
+        </li>
+    </ul>
+    <div ui-view  class="tabs"></div>
+  </div>
+</div>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Oxygen::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+
+  $(".figcaption").each(function(i){
+    var divH = $(this).height();
+    var $p = $("p", $(this)).eq(0);
+    while ($p.outerHeight() > divH) {
+        $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
+    };
+});</script>

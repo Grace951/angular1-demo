@@ -1,0 +1,18 @@
+.dvr-list .table{
+  width: 100%;
+}
+
+#header .banner{
+background-position-x:0;
+background-position-y:18;
+-ms-behavior: url(/backgroundsize.min.htc);
+}
+
+.panel-body
+,.btn-switch ul li
+,.cat
+,.cat ul ul li:hover
+,.search-p-btn
+{
+  behavior: url(/PIE.htc);
+}

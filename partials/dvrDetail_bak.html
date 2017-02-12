@@ -1,0 +1,57 @@
+<div class="product-detail">
+  <div class="row">
+    <div id="product-top" class="col-md-6 product-images">
+      <img ng-src="{{img}}"
+           class="product"
+           ng-repeat="img in product.images"
+           ng-class="{active: mainImageUrl==img}">
+    </div>
+    <div class=" col-md-6 product-desc">
+      <h1>{{product.name}}</h1>
+      <div class="p-desc-detail">
+        <ul class="fa-ul">
+            <li ng-repeat="d in product.description"><i class="fa-li fa fa-check-square"></i>{{d}}</li>
+        </ul>
+      </div>
+      <div class="p-thumbs">
+        <ul class="product-thumbs">
+          <li ng-repeat="img in product.images"
+              ng-if="product.images.length>1"
+              ng-class="{active: mainImageUrl==img}">
+            <img ng-src="{{img}}" ng-click="setImage(img)">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="p-spec">
+    <table class="table table-striped table-bordered table-hover p-spec">
+      <colgroup>
+          <col class="col-md-3" class="info">
+          <col class="col-md-9" class="">
+      </colgroup>
+      <tbody ng-repeat="group in product.spec">
+        <tr>
+          <td colspan="2">{{group.name}}</td>
+        </tr>
+        <tr ng-repeat="member in group.members">
+          <td>{{ member.name }}</td>
+          <td>{{ member.details }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Oxygen::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>

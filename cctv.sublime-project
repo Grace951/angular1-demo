@@ -1,0 +1,35 @@
+{
+	"folders":
+	[
+		{
+			"path": "images"
+		},
+		{
+			"path": "js"
+		},
+		{
+			"path": "partials"
+		},
+		{
+			"path": "PIE"
+		},
+		{
+			"path": "products"
+		},
+		{
+			"path": "tmpl"
+		},
+		{
+			"path": "css"
+		},
+		{
+			"path": "fonts"
+		},
+		{
+			"path": "bootstrap-sass-3.3.5"
+		},
+		{
+			"path": "scss"
+		}
+	]
+}

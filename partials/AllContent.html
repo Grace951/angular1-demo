@@ -1,0 +1,29 @@
+<div ng-controller="ProductListCtrl">
+  <div class="search_product">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="search_p">
+          Search Products: <input type="text" class="search-p-btn" ng-model="share.query" ng-change="share.search('', 1);share.child.updateFilteredList()">
+        </div>
+        <div class="sort_p" ng-show="share.mode=='grid'">
+          Sort by:
+          <select class="form-control" ng-model="share.orderProp">
+            <option value="name" >Alphabetical</option>
+            <option value="type" ng-show="p=='DVR'||p=='CCTV'">System</option>
+            <option value="brand">Brand</option>
+          </select>
+        </div>
+        <app-view type="{{p}}" v="view" m="share.mode">
+      </div>
+    </div>
+  <div class="search_product">
+    <div class="row">
+      <div class="col-sm-12">
+         <div ng-include="view"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

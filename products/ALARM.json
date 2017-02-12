@@ -1,0 +1,54 @@
+[
+    {
+        "age": 0,
+        "id": "alarm-844",
+        "imageUrl": "images/products/alarm_844-1.png",
+        "name": "Solution 844 Kit",
+        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Honeywell XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).",
+        "brand": "BOSCH",
+        "channel":"4",
+        "remote":"LAN and Internet, Mobile Phone ",
+		"compression":"H.264",
+        "HDD":"SATA",
+        "videoout":"HDMI, VGA"
+    },
+    {
+        "age": 1,
+        "id": "alarm-880",
+        "imageUrl": "images/products/alarm_880-1.png",
+        "name": "Solution 880 Kit",
+        "snippet": "The Next, Next Generation\n\nExperience the future with Honeywell XOOM, the world's first tablet powered by Android 3.0 (Honeycomb).",
+        "brand": "BOSCH",
+        "channel":"8",
+        "remote":"LAN and Internet, Mobile Phone ",
+		"compression":"H.264",
+        "HDD":"SATA",
+        "videoout":"HDMI, VGA"
+    },
+    {
+        "age": 2,
+        "id": "alarm-880-wireless",
+        "imageUrl": "images/products/alarm_880_wireless-1.png",
+        "name": "Solution 880 Ultima Wireless Kit",
+        "snippet": "Honeywell ATRIX 4G the world's most powerful smartphone.",
+        "brand": "BOSCH",
+        "channel":"4",
+        "remote":"LAN and Internet, Mobile Phone ",
+		"compression":"H.264",
+        "HDD":"SATA",
+        "videoout":"HDMI, VGA"
+    },
+    {
+        "age": 4,
+        "id": "alarm-16-plus",
+        "imageUrl": "images/products/alarm_16_plus-1.png",
+        "name": "Solution 16 plus Kits",
+        "snippet": "The Hikvision Gem\u2122 brings you everything that you would expect and more from a touch display smart phone \u2013 more apps, more features and a more affordable price.",
+        "brand": "BOSCH",
+        "channel":"4",
+        "remote":"LAN and Internet, Mobile Phone ",
+		"compression":"H.264",
+        "HDD":"SATA",
+        "videoout":"HDMI, VGA"
+    }
+]

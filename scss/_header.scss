@@ -1,0 +1,332 @@
+#header{
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  height: $nav-height;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+  .banner{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-image: url('/images/logo-03.png');
+    background-size: 140px 48px;
+    background-position: 0px 18px;
+    @include respond-to(sm) {
+      background-size: 70px 24px;
+      background-position: 0px 10px;
+    }
+    background-repeat: no-repeat;
+    height: 80px;
+    h1{
+      display: block;
+      position: absolute;
+      width: 520px - 150px;
+      top: 20px;
+      left: 140px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 45px;
+      line-height: 45px;
+      @include respond-to(sm) {
+        top: 0px;
+        left: 60px;
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+    p{
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      font-size: 14px;
+      line-height: 14px;
+      font-family: 'Ubuntu', sans-serif;
+      @include respond-to(xs) {
+        display: none;
+      }
+      @include respond-to(sm) {
+        display: none;
+      }
+    }
+    .bar{
+        display: none;
+    }
+    .search{
+      position: absolute;
+      top: 40px;
+      right: 0px;
+      padding: 0;
+      max-width: 600px;
+      @include respond-to(md) {
+        width: 400px;
+      }
+      @include respond-to(sm) {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  }
+  #XX{
+    display:none;
+  }
+  .cctv-nav{
+    position: absolute;
+    z-index: 9999;
+    max-width: 1200px;
+    margin: 0 auto;
+    .fa{
+      display: block;
+      position: absolute;
+      right:10px;
+      top:25%;
+    }
+    .caret{
+      margin-left: 5px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      @include inline-block-grace(140px);
+      position:relative;
+      margin: 0;
+      padding: 0;
+    }
+    >ul>li:first-child{
+      border-left: 1px #555 solid;
+      margin-left: 0;
+    }
+    >ul>li{
+      margin-left: -3px;
+      border-right: 1px #555 solid;
+    }
+    .parent{
+      color: #fefefe;
+      text-align: center;
+      height: 45px;
+      line-height: 45px;
+    }
+    ul li a {
+      display: block;
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      color: #fefefe;
+      text-align: center;
+    }
+    ul ul
+    {
+      display:none;
+      position:absolute;
+      top:100%;
+      left:0;
+      padding:0;
+      width: 160px;
+      background: #fff;
+      border: 1px solid #999;
+    }
+    ul ul li{
+      width: 100%;
+    }
+    ul>li>a:hover
+    ,ul>li>a:focus
+    {
+      background-color: #e5e5e5;
+      color: #000;
+    }
+    >ul>li>a:hover
+    ,>ul>li>a:focus
+    ,.active
+    ,.parent:hover
+    ,.parent:focus
+    {
+     background-color: $color6;
+     color: #fff;
+     text-decoration: none;
+    }
+    ul ul li a
+    {
+      display: block;
+      width: 100%;
+      height: 30px;
+      padding: 0 0 0 15px;
+      line-height: 30px;
+      margin:0;
+      text-align: left;
+      color:#666;
+    }
+
+    ul ul ul
+    {
+      top:0;
+      color:#666;
+      left:100%
+    }
+    ul ul ul li
+    {
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      padding: 0;
+      margin:0;
+      text-align: center;
+    }
+    ul ul ul li a
+    {
+      display: block;
+      color: #666;
+    }
+    ul ul ul li a:hover, ul ul ul li a:focus,  ul ul ul li a:active
+    {
+      color: #000;
+    }
+    ul li:hover>ul
+    {
+      display:block;
+    }
+  }
+  .myheader{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top:80px;
+    background-color: #000;
+  }
+}
+@include respond-to(xs) {
+  #header{
+    height: $xs-nav-height;
+    .banner{
+      background-size: 65px 22px;
+      background-position: 0px 8px;
+      h1{
+        top: 4px;
+        left: 55px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+      p{
+        display: none;
+      }
+      .bar{
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        color: $color6;
+        cursor: pointer;
+      }
+      .search{
+        width: 100%;
+        max-width: none;
+      }
+    }
+    .cctv-nav{
+      position:fixed;
+      left: 0;
+      top:0;
+      z-index:888;
+      width:100%;
+      height:100%;
+      margin:0 auto;
+      background-color:rgba(0,0,0,0.7);
+      display:none;
+      #XX{
+        display:block;
+        width:30px;
+        height:30px;
+        text-align:center;
+        line-height:30px;
+        position:absolute;
+        right:5px;
+        top:0px;
+        z-index: 9999;
+        cursor: pointer;
+        color: #fff;
+        :hover{
+          @include text-shadow(3px 3px 8px darken($color6,40)) ;
+        }
+      }
+      ul.dropdown-menu{
+        background-color: darken($color6,10);
+        background-image:none;
+        border: none;
+        //border:5px darken($color6,10) solid;
+        .fa{
+          display:none;
+        }
+      }
+      ul.dropdown-menu>li{
+        border-image: none;
+        border: none;
+        margin-top: -1px;
+//        background-color: darken($color7,30);
+      }
+      ul.dropdown-menu>li>a{
+        border-image: none;
+        padding-left: 20px;
+        height: 40px;
+        line-height: 40px;
+        border:1px darken($color6,10) solid;
+        color: #fff;
+        background-color:darken($color6,5);
+        @include box-shadow(3px 3px 8px darken($color6,40)) ;
+      }
+      ul.dropdown-menu>li>:hover,ul.dropdown-menu>li>:focus{
+        border-image-width:0;
+        color: #fff;
+        background-image:none;
+        border: none;
+        background-color: $color6;
+        @include box-shadow(3px 3px 10px darken($color6,15) inset) ;
+      }
+      ul ul li:hover>ul
+      {
+        display:none;
+      }
+
+      >ul{
+        width:260px;
+        height:260px;
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-left:-130px;
+        margin-top:-130px;
+      }
+
+      >ul>li{
+        width:100%;
+        float:none;
+      }
+      .parent{
+        width:100%;
+        line-height:50px;
+        background-color:#000;
+        border:1px solid #333;
+        color:#FFF;
+      }
+      >ul>li a{
+        display:block;
+        width:100%;
+        line-height:50px;
+        text-align:center;
+        text-decoration:none;
+        background-color:#000;
+        border:1px solid #333;
+        color:#FFF;
+      }
+
+      >ul>li a:hover{
+        border:1px solid #333;
+      }
+    }
+    .myheader{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<div class="download-tbl">
+<div data-ng-controller="downloadCtrl">
+    <table class="table table-hover table-striped" at-table at-paginated at-list="data" at-config="config">
+        <thead>
+          <tr>
+            <th at-attribute="desc">Description</th>
+            <th at-attribute="size">Size(KB)</th>
+            <th at-attribute="filetype">File Type</th>
+            <th at-attribute="src">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td at-implicit at-sortable at-attribute="desc"></td>
+            <td at-implicit at-sortable at-attribute="size" at-initial-sorting="asc"></td>
+            <td at-implicit at-sortable at-attribute="filetype" at-initial-sorting="asc"></td>
+            <td at-download at-attribute="src"></td>
+          </tr>
+        </tbody>
+    </table>
+    <at-pagination at-list="data" at-config="config"></at-pagination>
+</div>
+</div>

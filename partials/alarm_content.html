@@ -1,0 +1,21 @@
+<div id="p-stdpkg">
+      <div class="alarm-tbl">
+        <div data-ng-controller="alarmTblCtrl">
+            <table class="table table-hover table-striped" at-table at-paginated at-list="data" at-config="config">
+                <thead>
+                  <tr>
+                    <th at-attribute="desc">Contents</th>
+                    <th at-attribute="qty">Qty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td at-implicit at-sortable at-attribute="desc"></td>
+                    <td at-implicit at-sortable at-attribute="qty" at-initial-sorting="asc"></td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,23 @@
+@mixin inline-block-grace($w: 120px){
+    width:$w;
+    @include inline-block();
+    zoom:1;
+    *display:inline;
+}
+
+@mixin min-height-grace($h){
+    @include min-height($h);
+    height: auto !important;
+    height: $h;
+    min-height: $h;
+}
+
+@mixin font-size($sizeValue: 1.6, $fsize:$fontsize-p){
+    font-size: ($sizeValue * $fsize);
+    font-size: $sizeValue + rem;
+}
+
+@mixin line-height($sizeValue: 1.6, $fsize:$fontsize-p){
+    line-height: ($sizeValue * $fsize);
+    line-height: $sizeValue + rem;
+}

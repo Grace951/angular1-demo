@@ -1,0 +1,14 @@
+<div ng-controller="ProductListCtrlSide">
+  <div class="col-sm-12 cat">
+    <!--Sidebar content-->
+    <ul ><li>Brand:
+        <ul><li><a ui-sref="products.kit({ kitId: 0 , t:''})">
+            All &nbsp; ({{share.products.length}})</a></li>
+          <li><a ui-sref="products.kit({ kitId: 0 , t:'Honeywell' })">
+            Honeywell &nbsp; ({{(share.products | filter:{brand:'Honeywell'}).length}})</a></li>
+       </ul>
+    </ul>
+</div>
+
+
+

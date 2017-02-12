@@ -1,0 +1,43 @@
+  <div class="row grid_product">
+    <div class="col-xs-12" >
+      <!--Body content-->
+      <div class="products" >
+      <div class="prenext">
+      {{share.currentPage+1}}/{{numberOfPages()}}
+      <div class="btn-group">
+        <a class="btn btn-default" ng-disabled="share.currentPage <= 0" ng-click="share.currentPage=share.currentPage-1"><i class="fa fa-angle-left"></i></i></a>
+        <a class="btn btn-default" ng-disabled="share.currentPage >= (numberOfPages() - 1)" ng-click="share.currentPage=share.currentPage+1"><i class="fa fa-angle-right"></i></i></a>
+      </div>
+      </div>
+      <div class="row">
+      <div class="show_product">
+         <div class="col-sm-6 col-md-4 Grid"
+              ng-repeat="product in share.products | filter:share.query | orderBy:share.orderProp | startFrom:share.currentPage*share.pageSize | limitTo:share.pageSize">
+          <div class="block-wrap">
+            <a ui-sref="products.{{p|lowercase}}.spec({ {{p|lowercase}}Id: product.id })">
+              <div class="block">
+                <div>
+                  <img img-preload class="fade" ng-src="{{product.imageUrl}}">
+                </div>
+                <div class="title">
+                   <p class="brand ellipsis">{{product.brand}} {{product.type ? '-' : ''}} {{product.type}}</p><p class="model ellipsis">{{product.name}}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+         </div>
+         </div>
+      </div>
+      </div>
+      <div class="products" >
+      <div class="prenext">
+      {{share.currentPage+1}}/{{numberOfPages()}}
+      <div class="btn-group">
+        <a class="btn btn-default" ng-disabled="share.currentPage <= 0" ng-click="share.currentPage=share.currentPage-1"><i class="fa fa-angle-left"></i></i></a>
+        <a class="btn btn-default" ng-disabled="share.currentPage >= (numberOfPages() - 1)" ng-click="share.currentPage=share.currentPage+1"><i class="fa fa-angle-right"></i></i></a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+

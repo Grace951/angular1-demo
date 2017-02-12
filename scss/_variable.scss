@@ -1,0 +1,75 @@
+$bg: white;
+$footer-color: #2e2e2e;
+//$font-p: "Open Sans", sans-serif, "新細明體";
+$font-p: 'Ubuntu', Helvetica, Tahoma, Arial, sans-serif;
+$font-title: 'Ubuntu', Helvetica, Tahoma, Arial, sans-serif;
+$fontsize-p: 16px;
+$text-color: black;
+
+$primary-color2: #000;
+$nav-height: 120px;
+$xs-nav-height: 60px;
+$footer-height: 80px;
+
+$navoffset: 70px;
+
+$break-xs: 767px;
+$break-smmd: 991px;
+$break-lg: 1440px;
+
+$navoffset: 100px;
+$nav-xs-height: 50px;
+$slidermtop: $navoffset + $nav-xs-height + 3px;
+$banner-height: 250px;
+
+$navbar-inverse-bg:                         #222 !default;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
+$nav-width:130px;
+$little-title-w: 1000px;
+$little-title-w-sm: 700px;
+$little-title-w-md: 850px;
+
+//$color1: #2d7da4;
+$color1: #C70000;
+$color2: #6aa42f;
+$color3: #ffcc33;
+$color4: #db3615;
+//$color5: #62CAE3;
+$color5: lighten($color4, 45%);
+$color6: #CC3300;
+$color7: #E0914C;
+$color8: #FF9E00;
+
+$gsc-color: $color4;
+
+$brand-primary:         darken($color1, 6.5%) !default; // #337ab7
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+
+@mixin respond-to($media) {
+  @if $media == xs {
+    @media only screen and (max-width: $break-xs) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (min-width: $break-xs + 1) and (max-width: $break-smmd - 1) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $break-smmd + 1) and (max-width: $break-lg - 1) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: $break-lg) { @content; }
+  }
+}
+
+
+@mixin media($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+
+

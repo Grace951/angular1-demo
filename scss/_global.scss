@@ -1,0 +1,569 @@
+
+
+@import 'compass';
+//@import "rgbapng";
+@import 'variable';
+@import 'mixin';
+@import 'reset';
+@import 'app';
+
+@font-face{
+  font-family: SOSA;
+  src: url('/fonts/sosa-regular-webfont.eot');
+  src: url('/fonts/sosa-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/sosa-regular-webfont.woff') format("woff"),
+       url('/fonts/sosa-regular-webfont.ttf') format("truetype"),
+       url('/fonts/sosa-regular-webfont.svg') format("svg");
+
+}
+
+*{
+  margin:0;
+  padding:0;
+  @include box-sizing(border-box);
+}
+
+.table>thead>tr>th, .table>thead>tr>td, .table>tbody>tr>th, .table>tbody>tr>td, .table>tfoot>tr>th, .table>tfoot>tr>td {
+  color: #000;
+  font-size: 18px;
+}
+body, p {
+  font-family: #{$font-p};
+  font-size: $fontsize-p;
+  @include line-height(2.5);
+  @include min-height-grace(100%);
+  margin-bottom: 20px;
+  color: #666;
+}
+
+b{
+  color: #333;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height:auto;
+    background: url(/images/ajax-loader.gif) center center no-repeat #fff;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+h1{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  margin: 10px 20px;
+  color: #000;
+}
+h2, h3, h4, h5, h6{
+  color: #000;
+}
+html{
+  position: relative;
+  @include min-height-grace(100%);
+}
+.app-view{
+  float: right;
+}
+.search_product{
+  margin-bottom: 20px;
+}
+.btn-list{
+  line-height: 40px;
+  height: 40px;
+  width: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: right;;
+  background-color: #fefefe;
+}
+.btn-list:hover{
+    color: $color6;
+}
+.breadcrumb{
+  @include box-shadow(#e9e9e9 0 0 30px 1px inset);
+  a{
+    color: #000;
+  }
+  a:hover{
+    font-weight: 600;
+  }
+}
+.bar-title
+{
+  color: #000;
+  @include box-shadow(2px 2px 8px #888);
+  border-top:8px $color6 solid;
+}
+.note{
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  @include respond-to('sm'){
+    width: 100%;
+    padding: 0 5px;
+  }
+  @include respond-to('md'){
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none;
+    margin: 0;
+    padding: 0 5px;
+}
+
+#article{
+  padding-bottom: $footer-height;
+  padding-top:$nav-height;
+  max-width: 1200px;
+  margin: 0 auto;
+  @include respond-to('sm'){
+    width: 100%;
+  }
+  @include respond-to('md'){
+    width: 100%;
+  }
+  @include respond-to('xs'){
+    width: 100%;
+    padding: $xs-nav-height 5px $footer-height 5px;
+    padding-top: $xs-nav-height;
+  }
+}
+
+img.responsive{
+    max-width: 100%;
+}
+.mail{
+  color: $color4;
+}
+.text_logo{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 24px;
+  line-height: 50px;
+  color: #000;
+}
+.fa{
+  display: inline;
+}
+
+.clear{
+  width: 100%;
+  clear: both;
+}
+
+a {
+  color:#555;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  color: $color1;
+  text-decoration: none;
+}
+
+.cont{
+
+}
+
+.gly{
+    font-family: $font-title;
+    font-weight: 600;
+    font-size: 46px;
+    line-height:  46px;
+    cursor: pointer;
+    text-align: center;
+    ul li{
+      @include inline-block-grace(40%);
+      height: 46px;
+    }
+    ul > li > a{
+      width: 100%;
+    }
+}
+
+.page-header{
+  @include respond-to(xs) {
+    small{
+      display: none;
+    }
+  }
+}
+.gly-center{
+    width:150px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+
+.list1{
+  color: $navbar-inverse-bg;
+  margin-top: 5px;
+}
+
+.list2{
+  color: #ffb500;
+}
+
+.list2:after{
+  content:"\00a0\00a0";
+}
+
+.summary{
+  padding: 20px 50px 40px ;
+}
+
+
+.fix-width{
+  @include box-shadow(0px 3px 5px #999);
+
+  width:$little-title-w;
+  padding-top: 0px;
+  @include respond-to(md) {
+      width: $little-title-w-md;
+  }
+  @include respond-to(sm) {
+      width: $little-title-w-sm;
+  }
+  @include respond-to(xs) {
+      width:100%;
+  }
+  margin: 0 auto;
+}
+
+.ren{
+  background: #ffffe9;
+}
+
+.t-title{
+  position: relative;
+  height: 70px;
+}
+
+.rectangle {
+  position: absolute;
+  background: #7f9db9;
+  height: 70px;
+  width: $little-title-w + 30px;
+  @include respond-to(sm) {
+      width: $little-title-w-sm + 30px;
+  }
+  @include respond-to(md) {
+      width: $little-title-w-md + 30px;
+  }
+  left:-15px;
+  top: 0px;
+  float: left;
+  @include box-shadow(0px 5px 4px #666);
+  z-index: 100; /* the stack order: foreground */
+  display: inline-block;/*ie7*/
+  behavior: url(/pie-1.0.0/PIE.htc);
+}
+.triangle-l {
+  position: absolute;
+  border-color: transparent darken(#82a002, 10%) transparent transparent ;
+  border-style:solid;
+  border-width:15px;
+  height:0px;
+  width:0px;
+  left: -30px;
+  top: 55px;
+  z-index: 1; /* displayed under bubble */
+}
+
+.triangle-r {
+  position: absolute;
+  border-color: transparent transparent transparent darken(#82a002, 10%);
+  border-style:solid;
+  border-width:15px;
+  height:0px;
+  width:0px;
+  right: -30px;
+  top: 55px;
+  z-index: 1; /* displayed under bubble */
+}
+
+.triangle-exact {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 80px;
+  border-color: transparent transparent transparent #007bff;
+}
+
+.t-title:hover{
+  transform:scale(1.1,1.1);
+  transform:translate(0,-15px);
+  @include transition(.5s);
+}
+
+#review{
+  position: relative;
+  width:70%;
+  height:600px;
+  margin: 0 auto;
+}
+
+.circle{
+  position: absolute;
+//  @include border-radius(100%, 100%);
+  background: gray;
+  color: white;
+  text-align: center;
+}
+
+#re-review{
+  width:250px;
+  height:250px;
+  line-height: 250px;
+  font-size: 40px;
+  top: 20%;
+  left: 15%;
+  background: $color1;
+}
+
+#im-review{
+  width:400px;
+  height:400px;
+  line-height: 400px;
+  font-size: 60px;
+  top: 20%;
+  left: 30%;
+  background: $color2;
+}
+
+#fa-review{
+  width:150px;
+  height:150px;
+  line-height: 150px;
+  font-size: 30px;
+  top: 10%;
+  left: 55%;
+  background: $color4;
+}
+
+#ab-review{
+  width:300px;
+  height:300px;
+  font-size: 45px;
+  line-height: 300px;
+  top: 35%;
+  left: 60%;
+  background: $color3;
+}
+#plane{
+  position: fixed;
+  color: #000;
+  font-size: 36px;
+  z-index: 300;
+}
+.plane-re{
+  position: absolute;
+  top: 22%;
+  left: 15%;
+}
+.plane-im{
+  position: absolute;
+  top: 22%;
+  left: 30%;
+}
+.plane-fa{
+  position: absolute;
+  top: 12%;
+  left: 50%;
+}
+.plane-ab{
+  position: absolute;
+  top: 37%;
+  left: 60%;
+}
+
+#re-review:hover
+,#im-review:hover
+,#fa-review:hover
+,#ab-review:hover
+{
+  z-index: 100;
+  transition: 1000ms;
+  @include animation(shake 0.8s infinite linear);
+}
+
+#re-review:hover{
+  background: darken($color1, 10%);
+}
+
+#im-review:hover{
+  background: darken($color2, 10%);
+}
+
+#fa-review:hover{
+  background: darken($color4, 10%);
+}
+
+#ab-review:hover{
+  background: darken($color3, 10%);
+}
+@include keyframes(shake) {
+    0% { @include transform(translate(2px, 0px) rotate(0deg)); }
+    10% { @include transform(translate(-1px, 0px) rotate(-1deg)); }
+    20% { @include transform(translate(-3px, 0px) rotate(1deg)); }
+    30% { @include transform(translate(0px, 0px) rotate(0deg)); }
+    40% { @include transform(translate(1px, 0px) rotate(1deg)); }
+    50% { @include transform(translate(-1px, 0px) rotate(-1deg)); }
+    60% { @include transform(translate(-3px, 0px) rotate(0deg)); }
+    70% { @include transform(translate(4px, 2px) rotate(-1deg)); }
+    80% { @include transform(translate(-2px, -2px) rotate(1deg)); }
+    90% { @include transform(translate(4px, 0px) rotate(0deg)); }
+    100% { @include transform(translate(2px, 0px) rotate(-1deg)); }
+}
+/* usage
+.item:hover{
+    @include animation(shake 0.8s infinite linear);
+    @include transform-origin(50% 50%);
+}
+*/
+
+
+
+.big-bar{
+    width: 100%;
+    background: $footer-color;
+    height:150px;
+    text-align: center;
+}
+
+.big-title{
+  width: 100%;
+    padding: 60px 20px 60px 20px;
+    font-family: $font-title;
+    font-weight: 600;
+    font-size: 60px;
+    color: white;
+}
+
+.little-title{
+    padding: 20px 20px;
+    font-family: $font-title;
+    font-weight: 550;
+    font-size: 26px;
+    color: white;
+    background: #82a002;
+    margin: 0;
+}
+
+
+.think {
+    padding: 0;
+    a {
+        text-decoration: none;
+        color: #82a002;
+    }
+    .doubt {
+    }
+    .explore{
+        font-size: 45px;
+        margin:120px 0 0 -50px;
+    }
+    .explore:hover{
+       color: #ff8500;
+       font-size: 55px;
+       @include transition(0.3s);
+    }
+}
+
+
+/**************************************
+     google custom search hack
+***************************************/
+.gsc-search-button,
+.gsc-search-button-v2{
+  @include box-sizing(content-box);
+}
+.gsc-control-cse, .gsc-input, .gsc-search-box{
+    margin: 0 !important;
+    padding: 0!important;
+    max-height: 100%!important;
+}
+
+.gsc-search-box, .gsc-control-cse{
+//  background: transparent!important;
+//  color: transparent!important;
+  border:0!important;
+}
+
+table.gsc-search-box td {
+  vertical-align: top!important;
+  max-height: 100%!important;
+}
+.gsib_a{
+    padding: 0 0 0 6px !important;
+}
+
+.gsc-input{
+  background-color: transparent!important;
+}
+
+.gsc-search-button{
+  vertical-align: top !important;
+  color: #fff!important;
+}
+
+.gsc-search-button, .gsc-search-button-v2{
+  margin-top: -1px !important;
+}
+.gsc-tabHeader,
+.gsc-inline-block,
+.gsc-tabhActive,
+.gs-snippet,
+.gsc-results,
+.gsc-webResult
+{
+  @include box-sizing(content-box);
+}
+
+.gsc-tabHeader
+, .gsc-inline-block
+, .gsc-tabhActive
+, .gs-snippet
+, .gsc-results
+, .gsc-webResult
+, .gsc-tabHeader
+, .gsc-inline-block
+, .gsc-tabhActive
+, .gs-snippet
+, .gsc-results
+, .gsc-webResult {
+  @include box-sizing(content-box);
+}
+
+.gsc-control-cse {
+  font-family: $font-title !important;
+}
+
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+  border-color: transparent !important;
+  background-color: $gsc-color !important;
+}
+
+
+
+

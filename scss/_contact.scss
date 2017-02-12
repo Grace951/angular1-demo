@@ -1,0 +1,121 @@
+.contact{
+  padding: 30px 0px 30px 15px ;
+  .c{
+    padding:0;
+  }
+  @include respond-to('xs'){
+    margin: 0;
+    padding: 5px 0 5px 5px;
+    width:100%;
+  }
+  .contact-bar{
+    height: 30px;
+    width: 100%;
+    margin: 3px 0;
+    padding: 0;
+    @include respond-to('xs'){
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .fa{
+    text-align: center;
+    color: $color1;
+  }
+  .content{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    border-left: 2px solid #aaa;
+    padding: 0;
+    padding-left: 5px;
+    margin: 5px 0;
+    vertical-align: middle;
+  }
+  .content-hour{
+    line-height: 25px;
+    height: 70px;
+  }
+  .content-bar-hour{
+    height: 80px;
+    @include respond-to('xs'){
+      height: 120px;
+    }
+  }
+  .title{
+    float: left;
+    width: 20px;
+  }
+}
+
+.front-door{
+  width: 100%;
+  height: 400px;
+  padding:0;
+  margin: 0;
+  position: relative;
+  .front-door-photo-wrap, .front-door-t{
+    @include respond-to('xs'){
+      float: left;
+    }
+  }
+  .front-door-photo-wrap{
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .front-door-photo{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    height: 0;
+    max-width: 100%;
+    padding-bottom: 65.23%;
+    img {
+      background-color: white;
+      display: none;
+      width: 100%;
+      border: 1px #fff solid;
+    }
+
+    img:first-child {
+      display: block;
+    }
+  }
+  .front-door-t{
+    margin: 0;
+    padding: 0;
+    @include respond-to('xs'){
+      width: 100%;
+    }
+    //background-color: blue;
+    ul.product-thumbs img {
+      float: none;
+      padding: 1px;
+      border:none;
+      width: 100%;
+      //opacity: 0.5;
+      @include respond-to('xs'){
+        float: left;
+        width: 33%;
+      }
+      @include respond-to('sm'){
+        float: left;
+        width: 33%;
+      }
+    }
+
+    ul.product-thumbs li.active img{
+      border: 5px solid $color1;
+      padding:0;
+      @include border-radius(20px);
+      //@include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+       //opacity: 1;
+    }
+
+    ul.product-thumbs img:hover {
+      cursor: pointer;
+      //opacity: 1;
+    }
+  }
+}

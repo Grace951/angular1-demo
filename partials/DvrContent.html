@@ -1,0 +1,16 @@
+<div ng-controller="ProductListCtrl">
+  <div class="search_product">
+      Search Products: <input class="search_p" ng-model="share.query" ng-change="share.search('', 1);share.child.updateFilteredList()">
+      Sort by:
+      <select ng-model="share.orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="type">System</option>
+        <option value="brand">Brand</option>
+      </select>
+      <span app-view="view"></span>
+  </div>
+  <div ng-include="view"></div>
+</div>
+
+
+

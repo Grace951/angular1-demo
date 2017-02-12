@@ -1,0 +1,48 @@
+<div ng-controller="SampleCtrl" class="home-banner">
+  <div class="well banner">
+    <div class="panel-body" ng-switch="article">
+        <div ng-switch-when="1" class="banner1 my-switch-animation">
+          <div class="bg"></div>
+          <div class="word">
+            <h2>DVR and NVR</h2>
+            <h3>See you anywhere anytime</h3>
+          </div>
+        </div>
+        <div ng-switch-when="2" class="banner2 my-switch-animation">
+          <div class="bg"></div>
+          <div class="word">
+              <h2>Instrusion Alarm</h2>
+              <h3>Solid protection for you</h3>
+          </div>
+        </div>
+        <div ng-switch-when="3" class="banner3 my-switch-animation">
+          <div class="bg"></div>
+          <div class="word">
+            <h2>CCTV Camera</h2>
+            <h3>Connect everywhere</h3>
+          </div>
+        </div>
+    </div>
+    <div class="btn-switch col-xs-12 hidden-xs">
+      <ul>
+        <li ng-click="article = '1';" ng-class="{'active': article === '1'}"></li>
+        <li ng-click="article = '2';" ng-class="{'active': article === '2'}"></li>
+        <li ng-click="article = '3';" ng-class="{'active': article === '3'}"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <script>
+  function getVisibleOpts() {
+    return {
+      time: true,
+      easing: true,
+      direction: true,
+    }
+  };
+  function setIniValues($scope) {
+    $scope.time = '300';
+    $scope.position = 'Right';
+  }
+
+  </script>

@@ -1,0 +1,76 @@
+<!-- partials/state1.html -->
+<div ui-view=""></div>
+<h1>DVR</h1>
+<div ng-controller="ProductListCtrl">
+          <div class="row" ng-controller="pageSwitch">
+            <div class="col-sm-12 col-md-2 col-lg-2 cat">
+              <!--Sidebar content-->
+
+              Search: <input ng-model="query">
+              Sort by:
+              <select ng-model="orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="type">Type</option>
+                <option value="brand">Brand</option>
+              </select>
+              <ul ><li>Brand:
+                  <ul><li><a ng-click="query=''">All &nbsp; ({{products.length}})</a></li>
+                    <li><a ng-click="query='Samsung'; currentPage=0">Samsung &nbsp; ({{(products | filter:{brand:'Samsung'}).length}})</a></li>
+                    <li><a ng-click="query='Dell'; currentPage=0">Dell &nbsp; ({{(products | filter:{brand:'Dell'}).length}})</a></li>
+                    <li><a ng-click="query='LG'; currentPage=0">LG &nbsp; ({{(products | filter:{brand:'LG'}).length}})</a></li>
+                    <li><a ng-click="query='Motorola'; currentPage=0">Motorola &nbsp; ({{(products | filter:{brand:'Motorola'}).length}})</a></li>
+                    <li><a ng-click="query='T-Mobile'; currentPage=0">T-Mobile &nbsp; ({{(products | filter:{brand:'T-Mobile'}).length}})</a></li>
+                    <li><a ng-click="query='SANYO'; currentPage=0">SANYO &nbsp; ({{(products | filter:{brand:'SANYO'}).length}})</a></li>
+                 </li></ul>
+                 <li>Type:
+                  <ul><li><a ng-click="query=''">All &nbsp; ({{(products).length}})</a></li>
+                    <li><a ng-click="query='HD-SDI'; currentPage=0">HD-SDI &nbsp; ({{(products | filter:{type:'HD-SDI'}).length}})</a></li>
+                    <li><a ng-click="query='HD-TVI'; currentPage=0">HD-TVI &nbsp; ({{(products | filter:{type:'HD-TVI'}).length}})</a></li>
+                    <li><a ng-click="query='AHD'; currentPage=0">AHD &nbsp; ({{(products | filter:{type:'AHD'}).length}})</a></li>
+                    <li><a ng-click="query='Analog'; currentPage=0">Analog &nbsp; ({{(products | filter:{type:'Analog'}).length}})</a></li>
+                 </li></ul>
+              </ul>
+
+
+            </div>
+            <div class="col-sm-12 col-md-10 col-lg-10 " >
+              <!--Body content-->
+              <div class="products" >
+              <div class="row">
+              <div class="prenext">
+                 <button class="prebtn" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+                  <i class="fa fa-angle-left"></i>
+                 </button>
+                 {{currentPage+1}}/{{numberOfPages()}}
+                 <button class="prebtn" ng-disabled="currentPage >= ((products.length/pageSize) - 1)" ng-click="currentPage=currentPage+1">
+                  <i class="fa fa-angle-right"></i>
+                 </button>
+              </div>
+              </div>
+              <div class="row">
+              <div class="show_product">
+              <ul >
+                <li ng-repeat="product in products | filter:query | orderBy:orderProp | startFrom:currentPage*pageSize | limitTo:pageSize" >
+                  <a ui-sref="products.dvr.details({ dvrId: product.id })" ng-href="#/products/dvr/{{product.id}}">
+                   <div class="block">
+                       <div class="img">
+                         <img ng-src="{{product.imageUrl}}">
+                       </div>
+                      <div class="title">
+                         <p class="brand">{{product.type}} - {{product.brand}}</p><p class="model">{{product.name}}</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              </div>
+              </div>
+              </div>
+
+            </div>
+          </div>
+
+</div>
+
+
+

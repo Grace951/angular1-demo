@@ -1,0 +1,42 @@
+<div ng-controller="ProductListCtrlSide">
+  <div class="col-sm-12 cat">
+    <!--Sidebar content-->
+    <ul ><li>Brand:
+        <ul><li><a ui-sref="products.cctv({ cctvId: 0 , t:''})">
+            All &nbsp; ({{share.products.length}})</a></li>
+          <li><a ui-sref="products.cctv({ cctvId: 0 , t:'DigiGuard' })">
+            DigiGuard &nbsp; ({{(share.products | filter:{brand:'DigiGuard'}).length}})</a></li>
+          <li><a ui-sref="products.cctv({ cctvId: 0 , t:'Hikvision' })">
+            Hikvision &nbsp; ({{(share.products | filter:{brand:'Hikvision'}).length}})</a></li>
+          <li><a ui-sref="products.cctv({ cctvId: 0, t:'Honeywell'  })">
+            Honeywell &nbsp; ({{(share.products | filter:{brand:'Honeywell'}).length}})</a></li>
+          <li><a ui-sref="products.cctv({ cctvId: 0, t:'KCE'  })">
+            KCE &nbsp; ({{(share.products | filter:{brand:'KCE'}).length}})</a></li>
+          <li><a ui-sref="products.cctv({ cctvId: 0, t:'Samsung'  })">
+            Samsung &nbsp; ({{(share.products | filter:{brand:'Samsung'}).length}})</a></li>
+          <li><a ui-sref="products.cctv({ cctvId: 0, t:'Secuzone'  })">
+            Secuzone &nbsp; ({{(share.products | filter:{brand:'Secuzone'}).length}})</a></li>
+       </ul>
+       <li>System:
+        <ul><li><a >All &nbsp; ({{(share.products).length}})</a></li>
+          <li>
+            <a ui-sref="products.cctv({ cctvId: 0, t:'HD-SDI'  })">
+              HD-SDI &nbsp; ({{(share.products | filter:{type:'HD-SDI'}).length}})</a></li>
+          <li>
+            <a ui-sref="products.cctv({ cctvId: 0, t:'HD-TVI'  })">
+              HD-TVI &nbsp; ({{(share.products | filter:{type:'HD-TVI'}).length}})</a></li>
+          <li>
+            <a ui-sref="products.cctv({ cctvId: 0, t:'AHD'  })">
+              AHD &nbsp; ({{(share.products | filter:{type:'AHD'}).length}})</a></li>
+          <li>
+            <a ui-sref="products.cctv({ cctvId: 0, t:'Analog'  })">
+              Analog &nbsp; ({{(share.products | filter:{type:'Analog'}).length}})</a></li>
+          <li>
+            <a ui-sref="products.cctv({ cctvId: 0, t:'IP'  })">
+              IP &nbsp; ({{(share.products | filter:{type:'IP'}).length}})</a></li>
+       </ul>
+    </ul>
+</div>
+
+
+

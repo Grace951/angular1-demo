@@ -1,0 +1,825 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"mag",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"mra",
+				"margin"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"port",
+				"_portfolio_gp.scss"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"b",
+				"body	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 19230,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "partials/AlarmDetail.html",
+			"settings":
+			{
+				"buffer_size": 1960,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "partials/AllDetail.html",
+			"settings":
+			{
+				"buffer_size": 2224,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "products/CCTV.json",
+			"settings":
+			{
+				"buffer_size": 22407,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "products/details/ip-ds-2cd2632f-i_s.json",
+			"settings":
+			{
+				"buffer_size": 4409,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "inst pack",
+		"selected_items":
+		[
+			[
+				"inst pack",
+				"Package Control: Install Package"
+			],
+			[
+				"inst ",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst pa",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"pack li",
+				"Package Control: List Packages"
+			],
+			[
+				"inst p",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pace",
+				"Package Control: Install Package"
+			],
+			[
+				"pacle",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"gist",
+				"Package Control: Install Package"
+			],
+			[
+				"Emmet",
+				"Toggle Comment"
+			]
+		],
+		"width": 424.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/xampp/htdocs/partials",
+		"/D/xampp/htdocs/products",
+		"/D/xampp/htdocs/products/details",
+		"/D/xampp/htdocs/scss"
+	],
+	"file_history":
+	[
+		"/D/xampp/htdocs/products/details/ip-ds-2cd3132-i-28.json",
+		"/D/xampp/htdocs/products/details/ip-ds-2cd3132-i-4.json",
+		"/D/xampp/htdocs/products/details/ip-ds-d2cd3332-i-4.json",
+		"/D/xampp/htdocs/products/details/sco-6081r.json",
+		"/D/xampp/htdocs/products/details/kce-sdti650.json",
+		"/D/xampp/htdocs/products/details/kce-cvdti6536d2.json",
+		"/D/xampp/htdocs/products/details/ip-ds-d2cd3332-i-28.json",
+		"/D/xampp/htdocs/products/details/d2cd3332-i-28.json",
+		"/D/xampp/htdocs/products/details/d2cd3332-i-4.json",
+		"/D/xampp/htdocs/products/details/hik-7704-p4.json",
+		"/D/xampp/htdocs/products/details/h2d2pr1.json",
+		"/D/xampp/htdocs/products/details/hbd2prv2.json",
+		"/D/xampp/htdocs/products/details/h4d2prv2.json",
+		"/D/xampp/htdocs/products/details/hbd2pr1.json",
+		"/D/xampp/htdocs/products/details/sno-6084r.json",
+		"/D/xampp/htdocs/products/details/sno-6011r.json",
+		"/D/xampp/htdocs/products/details/srd-1680d.json",
+		"/D/xampp/htdocs/products/details/snd-l6083r.json",
+		"/D/xampp/htdocs/products/details/sno-l6083r.json",
+		"/D/xampp/htdocs/products/details/snv-6084r.json",
+		"/D/xampp/htdocs/products/details/snd-6083.json",
+		"/D/xampp/htdocs/products/details/snp-3120vh.json",
+		"/D/xampp/htdocs/products/details/srn-472s.json",
+		"/D/xampp/htdocs/products/details/seirb700vpd.json",
+		"/D/xampp/htdocs/partials/CctvSideBar.html",
+		"/D/xampp/htdocs/products/details/snp-3120vhjson.json",
+		"/D/xampp/htdocs/products/details/sco-2020rp.json",
+		"/D/xampp/htdocs/products/details/sco-2080rp.json",
+		"/D/xampp/htdocs/products/details/scv-2080p.json",
+		"/D/xampp/htdocs/products/details/scv-3120p.json",
+		"/D/xampp/htdocs/products/details/scv-2010fp.json",
+		"/D/xampp/htdocs/products/details/scv-6081r.json",
+		"/D/xampp/htdocs/products/details/seadirvb130.json",
+		"/D/xampp/htdocs/products/details/seadirb130.json",
+		"/D/xampp/htdocs/products/details/seadirb100.json",
+		"/D/xampp/htdocs/products/details/seadird100w.json",
+		"/D/xampp/htdocs/products/details/seadiridv130.json",
+		"/D/xampp/htdocs/products/details/kce-cbtit6508d.json",
+		"/D/xampp/htdocs/products/details/kce-cdtit6530d.json",
+		"/D/xampp/htdocs/products/details/kce-cvdtit6636v.json",
+		"/D/xampp/htdocs/products/details/tvi-7272g.json",
+		"/D/xampp/htdocs/products/details/tvi-7236g.json",
+		"/D/xampp/htdocs/products/details/tvi-7201a.json",
+		"/D/xampp/htdocs/products/details/tvi-6301a.json",
+		"/D/xampp/htdocs/products/details/tvi-7242a.json",
+		"/D/xampp/htdocs/products/details/seirbhdv60m.json",
+		"/D/xampp/htdocs/products/details/seirvd49hd.json",
+		"/D/xampp/htdocs/products/details/scd-6081r.json",
+		"/D/xampp/htdocs/products/details/scb-6001.json",
+		"/D/xampp/htdocs/products/details/scv-9081r.json",
+		"/D/xampp/htdocs/products/details/kce-gdti6537d2.json",
+		"/D/xampp/htdocs/products/details/kce-sbti6548cb.json",
+		"/D/xampp/htdocs/products/details/kce-ndti6536d2.json",
+		"/D/xampp/htdocs/products/details/kce-ndti5030d2.json",
+		"/D/xampp/htdocs/scss/_app.scss",
+		"/D/xampp/htdocs/scss/_detail.scss",
+		"/D/AU/形式修改/final/partials/AllDetail.html",
+		"/D/AU/形式修改/1008/partials/AllDetail.html",
+		"/D/AU/形式修改/1008/partials/AlarmDetail.html",
+		"/D/xampp/htdocs/partials/AllContent_grid.html",
+		"/D/xampp/htdocs/products/details/alarm-880-wireless.json",
+		"/D/xampp/htdocs/index.html",
+		"/D/xampp/htdocs/products/details/alarm-880.json",
+		"/D/xampp/htdocs/partials/CCTVContent_list.html",
+		"/D/xampp/htdocs/products/CCTV.json",
+		"/D/xampp/htdocs/products/INTERCOM.json",
+		"/D/xampp/htdocs/partials/INTERCOMContent_list.html",
+		"/D/xampp/htdocs/products/details/hik-tvi7216.json",
+		"/D/xampp/htdocs/products/details/alarm-16-plus.json",
+		"/D/xampp/htdocs/products/details/alarm-844.json",
+		"/D/xampp/htdocs/products/ALARM.json",
+		"/D/xampp/htdocs/products/DVR.json",
+		"/D/xampp/htdocs/partials/AllContent.html",
+		"/D/xampp/htdocs/partials/alarm_acc.html",
+		"/D/xampp/htdocs/partials/alarm_content.html",
+		"/D/xampp/htdocs/partials/AlarmDetail.html",
+		"/D/xampp/htdocs/js/animations.js",
+		"/D/xampp/htdocs/products/details/hd3-16u.json",
+		"/D/xampp/htdocs/products/details/413dh-j.json",
+		"/D/xampp/htdocs/partials/ALARMContent_list.html",
+		"/D/xampp/htdocs/partials/AlarmContent.html",
+		"/D/xampp/htdocs/scss/_home.scss",
+		"/D/xampp/htdocs/scss/_header.scss",
+		"/D/xampp/htdocs/scss/_footer.scss",
+		"/D/xampp/htdocs/partials/NVRContent_list.html",
+		"/D/xampp/htdocs/partials/KITContent_list.html",
+		"/D/xampp/htdocs/partials/DVRContent_list.html",
+		"/D/xampp/htdocs/products/NVR.json",
+		"/D/xampp/htdocs/products/details/sh3-04u.json",
+		"/D/xampp/htdocs/products/details/rhe-825u-b.json",
+		"/D/xampp/htdocs/products/details/rhe-1625u-b.json",
+		"/D/xampp/htdocs/products/details/rhd-813-b.json",
+		"/D/xampp/htdocs/products/details/ras-813-j.json",
+		"/D/xampp/htdocs/products/details/ras-413-j.json",
+		"/D/xampp/htdocs/products/details/ras-1613-j.json",
+		"/D/xampp/htdocs/products/details/mh3-08u.json",
+		"/D/xampp/htdocs/products/details/hik-tvi7208.json",
+		"/D/xampp/htdocs/products/details/hik-tvi7204.json",
+		"/D/xampp/htdocs/products/details/hik-8832-p16.json",
+		"/D/xampp/htdocs/products/details/hik-7716-p16.json",
+		"/D/xampp/htdocs/products/details/hik-7708-p8.json",
+		"/D/xampp/htdocs/products/details/4ch-ir-ball-dome-kit.json",
+		"/D/xampp/htdocs/products/details/d-rhe-428-j.json",
+		"/D/xampp/htdocs/products/details/d-rhe-828-j.json",
+		"/D/xampp/htdocs/products/details/hen04101x.json",
+		"/D/xampp/htdocs/products/details/srd-482.json",
+		"/D/xampp/htdocs/products/details/srd-876d.json",
+		"/D/xampp/htdocs/products/details/sh3-08u.json",
+		"/D/xampp/htdocs/products/details/srd-470d.json",
+		"/D/xampp/htdocs/products/details/srd-1676d.json",
+		"/D/xampp/htdocs/products/details/srd-476d.json",
+		"/D/xampp/htdocs/products/details/4ch-ir-bullet-kit.json",
+		"/D/xampp/htdocs/partials/download.html",
+		"/D/xampp/htdocs/products/details/hik-8852-p16.json",
+		"/D/xampp/htdocs/products/details/hik-7708-p4.json",
+		"/D/xampp/htdocs/products/details/hik-7704-p4-1.json",
+		"/D/xampp/htdocs/partials/AllDetail.html",
+		"/D/xampp/htdocs/index_bak.html",
+		"/D/xampp/htdocs/js/angular-table.js",
+		"/D/xampp/htdocs/partials/home.html",
+		"/D/xampp/htdocs/js/app.js",
+		"/D/xampp/htdocs/scss/_global.scss",
+		"/D/xampp/htdocs/products/KIT.json",
+		"/D/xampp/htdocs/scss/_animate.scss",
+		"/D/xampp/htdocs/css/animations.css",
+		"/D/xampp/htdocs/scss/_variable.scss",
+		"/D/xampp/htdocs/products/details/srd-880d.json",
+		"/D/xampp/htdocs/products/details/srd-1656d.json"
+	],
+	"find":
+	{
+		"height": 60.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+			"D:\\xampp\\htdocs\\",
+			"D:\\xampp\\htdocs\\scss",
+			"D:\\xampp\\htdocs\\sass",
+			"D:\\xampp\\htdocs\\",
+			"D:\\xampp\\htdocs\\scss",
+			"D:\\xampp\\htdocs\\",
+			"D:\\xampp\\htdocs\\scss",
+			"D:\\xampp\\htdocs\\partials",
+			"D:\\xampp\\htdocs\\scss",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"power",
+			"br",
+			"IR Range",
+			"Alarm Trigger",
+			")\"}\n",
+			"}\n",
+			"Yes",
+			"\"Compatible with Web client, HDCS (central managemen software and HonView Touch (Mobile Phone surveillance software)\",",
+			"RESET",
+			"Mozilla Firefox",
+			"l6083r",
+			"seirb700vpd",
+			"escapeRegExp",
+			"query",
+			"t",
+			"cctvId",
+			"type",
+			"IP",
+			"scv-6081",
+			"\n        ",
+			"2080rp",
+			"'",
+			"sensor",
+			"listCtrl",
+			"alarm-tbl",
+			"alarm_content",
+			".spec",
+			"specification",
+			"brand",
+			"hiddenView",
+			"AllContent_grid",
+			"sort",
+			"shareSearch",
+			"share",
+			"shareSearch",
+			"share",
+			"orderProp",
+			"share",
+			"alarmTabController",
+			"ani",
+			"product-desc",
+			"product-images",
+			"docs",
+			"tabController",
+			"preloader",
+			"app-view",
+			"DvrContent",
+			"app-view",
+			"appView",
+			"\"\n",
+			"Interfaces",
+			")\"}",
+			"details",
+			"product-thumbs",
+			"table",
+			"product-thumbs",
+			"src",
+			"class",
+			"images/ajax-loader.gif",
+			"-7px",
+			"80px",
+			"350",
+			"400px",
+			";\n",
+			"\"16\"",
+			"\"4\"",
+			"\"8\"",
+			"\"16\"",
+			"\"8\"",
+			"\"4\"",
+			"sort",
+			"ever",
+			"1",
+			"Glyphicons Halflings",
+			"glyphicon",
+			"glyphicon-star",
+			"icon-font-path",
+			"fonts/bootstrap/glyphicons-halflings",
+			"../fonts/bootstrap/glyphicons-halflings",
+			"glyphicons-halflings-regular",
+			"glyphiconshalflings-regular",
+			"setupInitialSorting",
+			"product-top",
+			"product-thumbs",
+			"product-images",
+			"product-thumbs",
+			"product-images",
+			"product-desc",
+			"h1",
+			"product-desc",
+			"p-desc-detail",
+			"product-images",
+			"ui-view=\"sideBar\"",
+			".product-detail",
+			"@include respond-to(xs) {",
+			"product-detail",
+			".product-detail",
+			"product-desc",
+			"RHE-1625-U",
+			"RHE-825U-B",
+			"MH3-08U",
+			"}\n",
+			"PIE",
+			"bubble",
+			"_grid",
+			"height",
+			"{\n",
+			";\n",
+			"list-img",
+			"srd-16556",
+			"srd16556",
+			"startFrom",
+			"filter",
+			"SRD-880D (8ch)",
+			"sm",
+			"compression",
+			"Back-up",
+			"Compression",
+			"HDD",
+			"SATA",
+			"HDD",
+			"compression",
+			"Hikvision",
+			"DigiGuard",
+			"Hikvision",
+			"DigiGuard",
+			"H.264",
+			"SATA"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"2080r",
+			"”",
+			"desc",
+			"16",
+			"4",
+			"8",
+			"16",
+			"4",
+			"/fonts/bootstrap/glyphicons-halflings",
+			"backup",
+			"Back-up",
+			"PoEport",
+			"4",
+			"PoEport",
+			"Back-up",
+			"DigiGuard",
+			"USB, Network",
+			"4",
+			"PoEport",
+			"backup",
+			"front-door-animate"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": true,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11869,
+								11869
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "partials/AlarmDetail.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								647,
+								647
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "partials/AllDetail.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								918,
+								918
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "products/CCTV.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10453,
+								10453
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13001.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "products/details/ip-ds-2cd2632f-i_s.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4239,
+								4239
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 612.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 42.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 224.0
+	},
+	"pinned_build_system": "",
+	"project": "cctv.sublime-project",
+	"replace":
+	{
+		"height": 110.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\RWD\\123.py.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 58.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gridb",
+				"gridb"
+			],
+			[
+				"img",
+				"imgholder"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 326.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

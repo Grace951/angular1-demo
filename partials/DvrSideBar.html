@@ -1,0 +1,35 @@
+<div ng-controller="ProductListCtrlSide">
+  <div class="col-sm-12 cat">
+    <!--Sidebar content-->
+    <ul ><li>Brand:
+        <ul><li><a ui-sref="products.dvr({ dvrId: 0 , t:''})">
+            All &nbsp; ({{share.products.length}})</a></li>
+          <li><a ui-sref="products.dvr({ dvrId: 0 , t:'DigiGuard' })">
+            DigiGuard &nbsp; ({{(share.products | filter:{brand:'DigiGuard'}).length}})</a></li>
+          <li><a ui-sref="products.dvr({ dvrId: 0, t:'iCATCH'  })">
+            iCATCH &nbsp; ({{(share.products | filter:{brand:'iCATCH'}).length}})</a></li>
+          <li><a ui-sref="products.dvr({ dvrId: 0, t:'Samsung'  })">
+            Samsung &nbsp; ({{(share.products | filter:{brand:'Samsung'}).length}})</a></li>
+          <li><a ui-sref="products.dvr({ dvrId: 0, t:'SNM'  })">
+            SNM &nbsp; ({{(share.products | filter:{brand:'SNM'}).length}})</a></li>
+       </ul>
+       <li>System:
+        <ul><li><a ui-sref="products.dvr({ dvrId: 0 , t:''})">All &nbsp; ({{(share.products).length}})</a></li>
+          <li>
+            <a ui-sref="products.dvr({ dvrId: 0, t:'HD-SDI'  })">
+              HD-SDI &nbsp; ({{(share.products | filter:{type:'HD-SDI'}).length}})</a></li>
+          <li>
+            <a ui-sref="products.dvr({ dvrId: 0, t:'HD-TVI'  })">
+              HD-TVI &nbsp; ({{(share.products | filter:{type:'HD-TVI'}).length}})</a></li>
+          <li>
+            <a ui-sref="products.dvr({ dvrId: 0, t:'AHD'  })">
+              AHD &nbsp; ({{(share.products | filter:{type:'AHD'}).length}})</a></li>
+          <li>
+            <a ui-sref="products.dvr({ dvrId: 0, t:'Analog'  })">
+              Analog &nbsp; ({{(share.products | filter:{type:'Analog'}).length}})</a></li>
+       </ul>
+    </ul>
+</div>
+
+
+

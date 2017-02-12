@@ -1,0 +1,17 @@
+<div id="p-spec">
+    <table class="table table-striped table-bordered table-hover p-spec">
+      <colgroup>
+          <col class="col-md-3" class="info">
+          <col class="col-md-9" class="">
+      </colgroup>
+      <tbody ng-repeat="group in product.spec">
+        <tr>
+          <td colspan="2">{{group.name}}</td>
+        </tr>
+        <tr ng-repeat="member in group.members">
+          <td ng-bind-html="member.name"></td>
+          <td ng-bind-html="member.details"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

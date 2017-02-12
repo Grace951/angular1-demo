@@ -1,0 +1,39 @@
+  <div class="products" >
+    <div class="dvr-list table-responsive" ng-controller="listCtrl">
+      <table class="table table-striped" at-table at-paginated at-list="filteredList" at-config="config">
+        <thead>
+          <tr>
+            <th width="150" at-attribute="imageUrl">&nbsp</th>
+            <th at-attribute="brand"> Brand</th>
+            <th at-attribute="name" >Name</th>
+            <th at-attribute="desc" >desc</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td at-img at-attribute="imageUrl" at-state="intercom" class="list-img-td"></td>
+            <td at-implicit at-sortable at-attribute="brand"  at-initial-sorting="asc"></td>
+            <td at-implicit at-sortable at-attribute="name" at-initial-sorting="asc"></td>
+            <td at-implicit at-sortable at-attribute="desc"  at-initial-sorting="asc"></td>
+          </tr>
+        </tbody>
+      </table>
+      <at-pagination at-list="filteredList" at-config="config"></at-pagination>
+    </div>
+  </div>
+<script>
+/*
+  $(function() {
+    $('.dvr-list i.glyphicon-chevron-up').parent("th").css( "background-color", "#62CAE3");
+    $('.dvr-list i.glyphicon-chevron-up').parent("th").css( "border-bottom-color", "#62CAE3");
+    $('.dvr-list i.glyphicon-chevron-down').parent("th").css( "background-color", "#62CAE3");
+    $('.dvr-list i.glyphicon-chevron-down').parent("th").css( "border-bottom-color", "#62CAE3");
+  });
+*/
+</script>
+
+
+
+
+

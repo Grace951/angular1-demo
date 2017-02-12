@@ -1,0 +1,78 @@
+<div class="container" ng-controller="frontDoorController">
+<div class="row">
+    <div class="col-lg-12">
+        <ol class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li class="active">Contact</li>
+        </ol>
+        <h1 class="page-header">Contact
+            <small>We'd Love to Hear From You!</small>
+        </h1>
+    </div>
+
+    <div class="col-lg-12">
+        <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=106769226832839893040.0004696439a6ad4fbbf77&amp;ll=-33.891997,150.964916&amp;spn=0.003117,0.00456&amp;t=h&amp;z=17&amp;output=embed"></iframe>
+    </div>
+
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1 class="page-header"><b>Hi-Tech</b> Digital CCTV</h1>
+    </div>
+    <div class="col-sm-5 col-md-4">
+      <div class="about contact col-xs-12">
+        <p>Unit 10/62 Hume Highway, <br>
+            Corner of Knight Street<br>
+            Lansvale 2166 <br>
+            NSW Australia<br>
+        </p>
+
+        <div class="col-xs-12 c">
+            <div class="contact-bar col-xs-12">
+                <div class="title"><abbr title="Phone"><i class="fa fa-phone"></i></abbr></div>
+                <div class="content"> 02 9725 7733</div>
+            </div>
+            <div class="contact-bar col-xs-12">
+                <div class="title"><abbr title="E-mail"><i class="fa fa-envelope-o"></i> </abbr></div>
+                <div class="content"> <a href="cctv@hitechdigitalcctv.com.au">info@hitechdigitalcctv.com.au</a></div>
+            </div>
+            <div class="contact-bar content-bar-hour col-xs-12">
+                <div class="title"><abbr title="Hours"><i class="fa fa-clock-o"></i> </abbr></div>
+                <div class="content content-hour">  Mon - Fri, 10:00am - 5:00pm<br>Saturday, 10:00am - 3:00pm<br>Sunday and Public Holiday Closed
+                </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-7 col-md-8 ">
+      <div class="row front-door">
+        <div class="col-xs-12 col-md-9 front-door-photo-wrap">
+            <div class="front-door-photo">
+               <img ng-src="{{img}}"
+                   class="img-responsive ani"
+                   ng-repeat="img in fronts"
+                   ng-class="{active: mainImageUrl==img}">
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 front-door-t">
+            <ul class="product-thumbs" >
+              <li ng-repeat="img in fronts"
+                ng-class="{active: mainImageUrl==img}">
+                <img src="{{img}}"
+                    ng-click="setImage(img)"
+                    class="img-responsive">
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- /.row -->
+
+</div>

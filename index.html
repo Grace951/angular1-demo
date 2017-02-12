@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Grace Yeh">
+    <title>Hi-Tech Digital CCTV</title>
+    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+ <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie8.css">
+  <![endif]-->
+
+<!-- Vendor: Javascripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-sanitize.min.js"></script>
+<script src="js/angular-table.min.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.14/angular-ui-router.min.js"></script>
+
+
+<script src="js/app.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/filters.js"></script>
+
+
+ <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <script src="js/augment.js"></script>
+    <script src="js/es5-shim.min.js"></script>
+  <![endif]-->
+
+<!--[if lte IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/json3/3.2.6/json3.min.js">
+  </script>
+<![endif]-->
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body id="ng-app" ng-app="highTech">
+<div id="header" ng-controller="headerCtrl">
+  <div class="container">
+    <div class="banner">
+        <h1><b>Hi-Tech</b> <span style="font-weight:500">Digital CCTV</span></h1>
+        <p>for all your residential, commercial and industrial needs. &nbsp<i class="fa fa-phone"></i> &nbsp 02 9725 7733</p>
+        <span id="BTN" class="bar"><i class="fa fa-bars"></i></span>
+        <div id="search" class="search">
+          <script>
+          //for ie8: Google custom search need to put in index.html, cannot put in ng-include
+            (function() {
+              var cx = '010537077688859157203:be4kn89v_sy';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                  '//cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+        </div>
+    </div>
+    <div id="cctv-nav" class="cctv-nav">
+      <ul>
+        <h3 id="XX"><i class="fa fa-times"></i></h2>
+          <li><a href="#" ui-sref="home" ui-sref-active="active" > Home </a>
+          </li>
+          <li ng-class="{active:$state.includes('products')}"><div class="parent">Products<span class='caret'></span></div>
+            <ul class="dropdown-menu">
+              <li>
+              <a href="#" ui-sref="products.dvr({dvrId:0, t:'HD-SDI'})">DVR<i class="fa fa-caret-right"></i></a>
+                <ul class="dropdown-menu">
+                    <li ><a href="#" ui-sref="products.dvr({dvrId:0, t:'HD-SDI'})">HD-SDI</a></li>
+                    <li ><a href="#" ui-sref="products.dvr({dvrId:0, t:'HD-TVI'})">HD-TVI</a></li>
+                    <li ><a href="#" ui-sref="products.dvr({dvrId:0, t:'AHD'})">AHD</a></li>
+                    <li ><a href="#" ui-sref="products.dvr({dvrId:0, t:'Analog'})">Analog</a></li>
+                </ul></li>
+              <li><a href="#" ui-sref="products.kit({kitId:0, t:'IP'})">Kit</a></li>
+              <li><a href="#" ui-sref="products.nvr({nvrId:0, t:''})">NVR</a></li>
+              <li><a href="#" ui-sref="products.cctv({cctvId:0, t:'HD-SDI'})">CCTV Camera<i class="fa fa-caret-right"></i></a>
+                <ul class="dropdown-menu">
+                    <li ><a href="#" ui-sref="products.cctv({cctvId:0, t:'HD-SDI'})">HD-SDI</a></li>
+                    <li ><a href="#" ui-sref="products.cctv({cctvId:0, t:'HD-TVI'})">HD-TVI</a></li>
+                    <li ><a href="#" ui-sref="products.cctv({cctvId:0, t:'AHD'})">AHD</a></li>
+                    <li ><a href="#" ui-sref="products.cctv({cctvId:0, t:'Analog'})">Analog</a></li>
+                    <li ><a href="#" ui-sref="products.cctv({cctvId:0, t:'IP'})">IP</a></li>
+                </ul></li>
+                <li><a href="#" ui-sref="products.alarm({alarmId:0, t:''})">Instrusion Alarm</a></li>
+                <li><a href="#" ui-sref="products.intercom({intercomId:0, t:''})">Video Intercom</a></li>
+            </ul>
+          </li>
+          <li><a href="#" ui-sref="aboutus" ui-sref-active="active" > About Us </a>
+          </li>
+          <li><a href="#" ui-sref="contact" ui-sref-active="active" > Contact </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div class="myheader">
+  </div>
+</div>
+  <div id="article" ui-view="" autoscroll></div>
+  <div id="footer" ng-include='"tmpl/footer.html"'></div>
+
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Lato:900:latin', 'Rajdhani::latin', 'Oswald:400,700:latin' , 'Ubuntu::latin'  ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+
+//////////////////////////////////////
+/// jQuery
+//////////////////////////////////////
+$(function(){
+  $("#BTN").on("click", OPENOPEN );
+  function OPENOPEN(){
+    //alert("OPENOPEN");
+    $("#cctv-nav").slideDown(300);
+    $("#XX").on("click", CLOSECLOSE );
+    $("a").on("click", CLOSECLOSE );
+  }
+  function CLOSECLOSE(){
+    $("#cctv-nav").slideUp(300);
+    $("#XX").off("click");
+    $("a").off("click");
+  }
+  $(window).on("resize",CLEARSTYLE);
+
+  function CLEARSTYLE(){
+    if($(window).innerWidth()>736){
+      $(".cctv-nav").attr("style","");
+    }
+  }
+
+  $.preloadImages = function() {
+    for (var i = 0; i < arguments.length; i++) {
+      $("<img />").attr("src", arguments[i]);
+    }
+  }
+  $.preloadImages("/images/banner1.png","/images/banner2.png","/images/banner3.png");
+
+});
+</script>
+</body>
+</html>
