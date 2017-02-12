@@ -9,11 +9,11 @@
 
 @font-face{
   font-family: SOSA;
-  src: url('/fonts/sosa-regular-webfont.eot');
-  src: url('/fonts/sosa-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/sosa-regular-webfont.woff') format("woff"),
-       url('/fonts/sosa-regular-webfont.ttf') format("truetype"),
-       url('/fonts/sosa-regular-webfont.svg') format("svg");
+  src: url('../fonts/sosa-regular-webfont.eot');
+  src: url('../fonts/sosa-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sosa-regular-webfont.woff') format("woff"),
+       url('../fonts/sosa-regular-webfont.ttf') format("truetype"),
+       url('../fonts/sosa-regular-webfont.svg') format("svg");
 
 }
 
@@ -276,7 +276,7 @@ a:hover, a:active, a:focus {
   @include box-shadow(0px 5px 4px #666);
   z-index: 100; /* the stack order: foreground */
   display: inline-block;/*ie7*/
-  behavior: url(/pie-1.0.0/PIE.htc);
+  behavior: url(../pie-1.0.0/PIE.htc);
 }
 .triangle-l {
   position: absolute;
